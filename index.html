@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lewis and Clark Expedition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: rgb(84, 99, 46);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+        .menu {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+        }
+        .menu .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .menu .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .menu .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .menu .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .menu .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .menu .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+        .menu .dropbtn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .image-container {
+            width: 80%; /* Adjust width as needed */
+            height: 400px; /* Adjust height as needed */
+            background-image: url('photos/team.jpeg');
+            background-size: cover; /* Adjust background size as needed */
+            margin: 0 auto;
+        }
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .submenu-title {
+            padding: 12px 16px;
+            display: block;
+            /* font-weight: bold; */
+            background-color: #f9f9f9;
+            color: black;
+            cursor: default;
+        }
+
+        .sub-dropdown-content {
+            max-height: 200px; 
+            overflow-y: auto;
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            background-color: #f9f9f9;
+            min-width: 250px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-submenu:hover .sub-dropdown-content {
+            display: block;
+        }
+
+        .sub-dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sub-dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="dropdown">
+                <button class="dropbtn">&#9776;</button>
+                <div class="dropdown-content">
+                    <div class="dropdown-submenu">
+                        <span class="submenu-title">Scrollytelling Journey</span>
+                        <div class="sub-dropdown-content">
+                            <a href="scrollytelling0.html">Before the Journey</a>
+                            <a href="scrollytelling1.html">Starting Up the Missouri</a>
+                            <a href="scrollytelling2.html">Past the Omahas</a>
+                            <a href="scrollytelling3.html">Among the Yanktons</a>
+                            <a href="scrollytelling4.html">Crossing the Lakotas</a>
+                            <a href="scrollytelling5.html">Winter at Fort Mandan</a>
+                            <a href="scrollytelling6.html">Along the Northern Reach</a>
+                            <a href="scrollytelling7.html">Portaging the Falls</a>
+                            <a href="scrollytelling8.html">Gates of the Rockies</a>
+                            <a href="scrollytelling9.html">Down the Western Valleys</a>
+                            <a href="scrollytelling10.html">Over the Bitterroots</a>
+                            <a href="scrollytelling11.html">Among the Nez Perce</a>
+                            <a href="scrollytelling12.html">Down the Columbia</a>
+                            <a href="scrollytelling13.html">Winter at Fort Clatsop</a>
+                            <a href="scrollytelling14.html">Return to the Clearwater</a>
+                            <a href="scrollytelling15.html">On the Road to the Buffalo</a>
+                            <a href="scrollytelling16.html">Clark on the Yellowstone</a>
+                            <a href="scrollytelling17.html">Lewis on the Marias</a>
+                            <a href="scrollytelling18.html">The Final Leg</a>
+                        </div>
+                    </div>
+                    <a href="team.html">Meet the Corps</a>
+                </div>
+            </div>
+        </div>
+        <h1>Lewis and Clark Expedition</h1>
+    </header>
+    <div class="content">
+        <!-- <h2>Landing Page</h2> -->
+        <p>This website is intended to give an introduction to the journey of Lewis and Clark into the territory gained through the Louisiana Purchase.</p>
+        <p>The menu in the upper right corner has links to the descriptions of some key members on the expedition and a Scrollytelling of the journey in a day-by-day breakdown with records of all journal entries.</p>
+        <div class="image-container"></div>
+    </div>
+</body>
+</html>
