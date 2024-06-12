@@ -1,0 +1,408 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(84, 99, 46);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.hover-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    z-index: 999;
+}
+
+.menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.menu .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+.menu .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.menu .dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+.menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.menu {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.menu .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.menu .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+.menu .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.submenu-title {
+    padding: 12px 16px;
+    display: block;
+    /* font-weight: bold; */
+    background-color: #f9f9f9;
+    color: black;
+    cursor: default;
+}
+
+.sub-dropdown-content {
+    max-height: 200px; 
+    overflow-y: auto;
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-submenu:hover .sub-dropdown-content {
+    display: block;
+}
+
+.sub-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.sub-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+.scrollytelling {
+    position: relative;
+}
+
+.step {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5em;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-image: url('../photos/country-road-view-above-aerial-600nw-1859173114.jpeg'); */
+    background-image: url('../photos/country-road-view-above-aerial-600nw-1859173114-transformed.webp');
+    /* background-color: #3e8e41; */
+
+
+    /* background-image: url('../photos/photo2pixel_download\ \(2\).png'); */
+    background-size: cover;
+    overflow: hidden;
+}
+
+.title{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(84, 99, 46);
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    font-size: 0.8em;
+}
+
+.viz {
+    width: 80%;
+    height: 400px;
+    margin: 20px 0;
+}
+
+.progress-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background: rgba(0, 0, 0, 0.1);
+    height: 10px;
+    border-radius: 5px;
+    overflow: visible;
+    z-index: 1000;
+}
+
+.progress-bar {
+    height: 100%;
+    /* background: rgb(84, 99, 46); */
+    background: rgba(0, 0, 0, 0.555);
+    width: 0%;
+    position: relative;
+}
+/* .progress-container {
+    width: 100%;
+    background: #f3f3f3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+}
+
+.progress-bar {
+    height: 5px;
+    background: #4caf50;
+    width: 0%;
+    transition: width 0.25s;
+} */
+
+
+
+.tick-mark {
+    position: absolute;
+    top: -5px;
+    width: 2px;
+    height: 20px;
+    background: black;
+}
+
+.tick-label {
+    position: absolute;
+    top: 15px;
+    transform: translateX(-50%);
+    font-size: 0.8em;
+    background-color: white;
+    border-radius: 2px;
+    white-space: nowrap; /* Ensure the date doesn't wrap */
+    overflow: visible; /* Ensure the full date is visible */
+}
+
+
+.day-desc {
+    font-family: Arial, sans-serif;
+    background-color: rgb(84, 99, 46);
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    max-width: 66%;
+    text-align: center;
+}
+
+.journal {
+    width: 120px;
+    height: 180px;
+    /* display: block; */
+    position: absolute;
+    background-image: url('../photos/1524-removebg-preview.png');
+    /* background-color: black; */
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fff;
+    /* margin-top: 100-px; */
+    margin: 3% auto;
+    
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.letter{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.death{
+    width: 180px;
+    height: 300px;
+    display: block;
+    background-image: url('../photos/floyd-removebg-preview.png');
+    /* background-color: black; */
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.special{
+    width: 600px;
+    height: 300px;
+    display: block;
+    /* background-image: url('../photos/floyd-removebg-preview.png'); */
+    /* background-color: black; */
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.map{
+    width: 455px;
+    height: 300px;
+    display: block;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+
+.arrow-button-container {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    text-align: center;
+}
+
+.left-arrow-button-container {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    text-align: center;
+}
+
+.left-arrow-button {
+    display: inline-block;
+    width: 50px; /* Adjust based on your image size */
+    height: 50px; /* Adjust based on your image size */
+    background: url('../photos/left-arrow-removebg-preview.png') no-repeat center center; /* Replace with your image URL */
+    background-size: contain;
+    cursor: pointer;
+    filter: brightness(0.5);
+}
+
+.arrow-button {
+    display: inline-block;
+    width: 50px; /* Adjust based on your image size */
+    height: 50px; /* Adjust based on your image size */
+    background: url('../photos/arrow-removebg-preview.png') no-repeat center center; /* Replace with your image URL */
+    background-size: contain;
+    cursor: pointer;
+    filter: brightness(0.5);
+}
+
+.arrow-button:hover, .left-arrow-button:hover {
+    filter: brightness(0.2); /* Darken the image on hover */
+}
+
+.arrow-button-text, .left-arrow-button-text {
+    /* margin-top: 10px; */
+    font-size: 14px;
+
+    /*
+    background-color: rgb(1, 80, 64); */
+
+    font-family: Arial, sans-serif;
+    background-color: rgb(84, 99, 46);
+    margin: 0px;
+    border-radius: 3px;
+    color: white;
+    max-width: 100%;
+    text-align: center;
+}
+
+.arrow-button-link, .left-arrow-button-link {
+    text-decoration: none;
+}
